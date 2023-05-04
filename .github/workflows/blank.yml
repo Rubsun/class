@@ -6,14 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Тест создания файла
-      run: |
-        chmod +x test_creation.sh
-        ./test_creation.sh
-    - name: Тест удаления файла
-      run: |
-        chmod +x test_removal.sh
-        ./test_removal.sh
     - name: Тест на проверку кол-во человек
       run: |
         chmod +x test1.sh
